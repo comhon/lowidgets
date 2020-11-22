@@ -1,0 +1,31 @@
+object WidgetStatusBarForm: TWidgetStatusBarForm
+  Left = 1281
+  Height = 115
+  Top = 112
+  Width = 302
+  Caption = 'Status Bar'
+  ClientHeight = 115
+  ClientWidth = 302
+  LCLVersion = '2.0.10.0'
+  object LabelMemText: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 26
+    Caption = 'RAM'
+    ParentColor = False
+  end
+  object LabelMem: TLabel
+    Left = 40
+    Height = 15
+    Top = 8
+    Width = 20
+    Caption = '--%'
+    ParentColor = False
+  end
+  object TimerResources: TTimer
+    OnTimer = TimerResourcesTimer
+    Left = 16
+    Top = 32
+  end
+end

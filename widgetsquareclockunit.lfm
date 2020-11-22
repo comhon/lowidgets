@@ -1,0 +1,88 @@
+object WidgetSquareClockForm: TWidgetSquareClockForm
+  Left = -8
+  Height = 129
+  Top = 101
+  Width = 249
+  BorderStyle = bsNone
+  Caption = 'Square Clock'
+  ClientHeight = 129
+  ClientWidth = 249
+  Color = clFuchsia
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object ShapeHour: TShape
+    Left = 0
+    Height = 113
+    Top = 8
+    Width = 249
+    Brush.Color = clHighlight
+    Pen.Color = clHotLight
+  end
+  object Shape2: TShape
+    Left = 16
+    Height = 129
+    Top = 0
+    Width = 105
+    Pen.Color = clSilver
+  end
+  object LabelHourH: TLabel
+    Left = 23
+    Height = 113
+    Top = 2
+    Width = 46
+    Caption = '0'
+    Font.Color = clWindowText
+    Font.Height = -85
+    Font.Name = 'Segoe UI'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 128
+    Height = 129
+    Top = 0
+    Width = 105
+    Pen.Color = clSilver
+  end
+  object LabelMinH: TLabel
+    Left = 135
+    Height = 113
+    Top = 3
+    Width = 46
+    Caption = '0'
+    Font.Color = clWindowText
+    Font.Height = -85
+    Font.Name = 'Segoe UI'
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelHourL: TLabel
+    Left = 68
+    Height = 113
+    Top = 2
+    Width = 46
+    Caption = '0'
+    Font.Color = clWindowText
+    Font.Height = -85
+    Font.Name = 'Segoe UI'
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelMinL: TLabel
+    Left = 180
+    Height = 113
+    Top = 3
+    Width = 46
+    Caption = '0'
+    Font.Color = clWindowText
+    Font.Height = -85
+    Font.Name = 'Segoe UI'
+    ParentColor = False
+    ParentFont = False
+  end
+  object TimerClock: TTimer
+    OnTimer = TimerClockTimer
+    Left = 112
+    Top = 80
+  end
+end
