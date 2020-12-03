@@ -22,7 +22,7 @@
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="2"/>
       <RevisionNr Value="1"/>
-      <BuildNr Value="2"/>
+      <BuildNr Value="3"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable CompanyName="Comhon Software" FileDescription="LoWidgets" InternalName="lowidgets" LegalCopyright="(c) Jan Štěpán" OriginalFilename="lowidgets.exe" ProductName="Comhon.LoWidgets" ProductVersion="0.2"/>
     </VersionInfo>
@@ -42,7 +42,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="9">
       <Unit0>
         <Filename Value="lowidgets.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -83,6 +83,16 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="LoWidgetsTimeUtils"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="dwmutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DWMUtils"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="spgetsid.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SPGetSid"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

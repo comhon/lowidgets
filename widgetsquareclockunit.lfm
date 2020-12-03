@@ -10,7 +10,7 @@ object WidgetSquareClockForm: TWidgetSquareClockForm
   Color = clFuchsia
   OnCreate = FormCreate
   LCLVersion = '2.0.10.0'
-  object ShapeHour: TShape
+  object ShapeColorBar: TShape
     Left = 0
     Height = 113
     Top = 8
@@ -18,7 +18,7 @@ object WidgetSquareClockForm: TWidgetSquareClockForm
     Brush.Color = clHighlight
     Pen.Color = clHotLight
   end
-  object Shape2: TShape
+  object ShapeHour: TShape
     Left = 16
     Height = 129
     Top = 0
@@ -37,7 +37,7 @@ object WidgetSquareClockForm: TWidgetSquareClockForm
     ParentColor = False
     ParentFont = False
   end
-  object Shape1: TShape
+  object ShapeMin: TShape
     Left = 128
     Height = 129
     Top = 0
@@ -79,6 +79,54 @@ object WidgetSquareClockForm: TWidgetSquareClockForm
     Font.Name = 'Segoe UI'
     ParentColor = False
     ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 16
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape2: TShape
+    Left = 40
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape3: TShape
+    Left = 64
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape4: TShape
+    Left = 88
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape5: TShape
+    Left = 112
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape6: TShape
+    Left = 135
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape7: TShape
+    Left = 160
+    Height = 20
+    Top = 140
+    Width = 17
+  end
+  object Shape8: TShape
+    Left = 184
+    Height = 20
+    Top = 140
+    Width = 17
   end
   object TimerClock: TTimer
     OnTimer = TimerClockTimer
